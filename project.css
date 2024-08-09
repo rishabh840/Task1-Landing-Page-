@@ -1,0 +1,388 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(244, 21, 59);
+    opacity: 0.9;
+    z-index:1;
+}
+
+#navigation .logo {
+    position: relative;
+    height: 60px;
+    width: 250px;
+    top: 15px;
+    left: 30px;
+    font-family: "Dancing Script", cursive;
+    font-style: normal;
+    color: white;
+    font-size: 25px;
+}
+
+.items {
+    display: flex;
+}
+
+.items li {
+    position: relative;
+    list-style: none;
+    margin: 2px;
+    padding: 2px 8px;
+    font-size: 20px;
+    top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.items li a {
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-style: bold;
+}
+
+.items li a:hover {
+    background-color: white;
+    color: red;
+    border-radius: 10px;
+}
+
+#navigation .btn {
+    position: relative;
+    top: 15px;
+    left: 800px;
+    height: 35px;
+    width: 80px;
+    background-color: white;
+    border: 2px solid red;
+    color: red;
+    border-radius: 6px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+#navigation div {
+    padding: 0px 10px;
+}
+
+#navigation .btn:hover {
+    background-color: red;
+    color: white;
+    border: 2px solid white;
+}
+
+/*Section Column*/
+#section1::before {
+    content: "";
+    position: absolute;
+    background: url(wedding1.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.7;
+}
+#section1 {
+    display: flex;
+    flex-direction: column;
+}
+
+#section1 .mainheading {
+    margin-top: 180px;
+    padding: 5px 80px;
+    font-size: 50px;
+    color: white;
+}
+#section1 .subheading{
+    width: 400px;
+    position: relative;
+    left: 800px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    top: 50px;
+    z-index: -1;
+}
+.sectionimage {
+    position: relative;
+    width: 450px;
+    height: 500px;
+}
+.sectionbtn button{
+    position: relative;
+    top: 50px;
+    left: 85px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+.sectionbtn button:hover {
+    background-color: rgb(253, 243, 254);
+    box-shadow: 5px 5px 5px red;
+    color: red;
+    border: 2px solid red;
+}
+
+/*Section2*/
+
+#section2::before {
+    content: "";
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    background-color: pink;
+    top: 600px;
+    margin-left: 35px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#section2 div h1 {
+    display: flex;
+    position: relative;
+    top: 210px;
+    justify-content: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    top: 260px;
+    left: 55px;
+    z-index: -1;
+}
+
+.images .contentimg {
+    width: 250px;
+    height: 280px;
+    margin: 0px 15px;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 4px solid white;
+}
+
+#section2 .choosebtn {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 300px;
+}
+
+#section2 .choosebtn button {
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    background-color: rgb(225, 29, 193);
+    color: white;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 0px 10px;
+}
+
+#section2 .choosebtn button:hover {
+    background-color: red;
+    box-shadow: 5px 5px 5px rgb(67, 64, 64);
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+/*Section3*/
+#section3::before {
+    content: "";
+    position:absolute;
+    background-color: rgb(186, 35, 131);
+    top: 1200px;
+    height: 100%;
+    width: 95%;
+    z-index:-1;
+    margin-left: 35px;
+    opacity: 0.7;
+}
+#section3 .container1 .section3heading{
+    position: relative;
+    text-align: center;
+    top: 470px;
+    color: white;
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-seri\;
+}
+#section3 .container1 .containerimg{
+    display: flex;
+    position: relative;
+    top: 530px;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    margin: 0px 180px;
+}
+#section3 .container1 .imglogo{
+    width: 150px;
+    height: 120px;
+    border-radius: 50%;
+}
+#section3 .container1 .containerimg1{
+    height: 300px;
+    text-align: center;
+    color: white;
+    text-align: center;
+}
+#section3 .container1 .containerimg2{
+    height: 300px;
+    text-align: center;
+    color: white;
+    text-align: center;
+}
+#section3 .container1 .containerimg3{
+   
+    height: 300px;
+    text-align: center;
+    color: white;
+    text-align: center;
+}
+#section3 .container1 h2,p{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Section4*/
+
+#section4::before{
+    content: "";
+    position:absolute;
+    background: url('wedding.jpg') no-repeat center/cover;
+    top: 1800px;
+    height: 100%;
+    width: 95%;
+    z-index:-1;
+    margin-left: 35px;
+    opacity: 0.7;
+}
+#section4 .container{
+    position: relative;
+    top: 670px;
+    justify-content: center;
+}
+#section4 .container h1{
+    color: white;
+    font-size: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 2px;
+
+}
+#section4 .form{
+    position: relative;
+    top: 720px;
+    justify-content: center;
+}
+#section4 .form .inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+}
+#section4 .form .inputs input{
+    width: 400px;
+    height: 40px;
+    border: 2px solid rgb(137, 18, 151);
+    cursor: pointer;
+    padding: 0px 10px;
+    font-size: 15px;
+    border-radius: 8px;
+}
+#section4 .form .inputs input:focus{
+    outline: none;
+}
+#section4 .form .inputs input:hover{
+    height: 45px;
+    font-size:18px ;
+}
+#section4 .form .inputbtn button{
+    position: relative;
+    top: 30px;
+    width: 180px;
+    height: 45px;
+    left: 420px;
+    font-size: 20px;
+    border-radius: 8px;
+    background-color: red;
+    color: white;
+    border: 2px solid white;
+}
+#section4 .form .inputbtn button:hover{
+    background-color: rgb(201, 56, 46);
+    box-shadow: 5px 5px 5px black;
+}
+
+/*Footer*/
+
+#footer::before{
+    content: "";
+    position:absolute;
+    background-color: black;
+    top: 2400px;
+    height: 100%;
+    width: 95%;
+    z-index:-1;
+    margin-left: 35px;
+    opacity: 0.85;
+}
+#footer .container{
+    position: relative;
+    top: 1000px;
+    color: white;
+    gap: 150px;
+    margin-left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid white;
+    margin-right: 120px;
+}
+#footer .container h1{
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+#footer .container h3{
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+#footer .container{
+    height: 200px;
+}
+#footer .icons{
+    position: relative;
+    display: flex;
+    gap: 30px;
+    top: 1100px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
